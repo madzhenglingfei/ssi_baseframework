@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zlf.ad</groupId>
+    <artifactId>ad-root</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>ad-common</artifactId>
+  <dependencies>
+  		<!-- mybatis 分页插件 -->
+	<dependency>
+    	<groupId>com.github.pagehelper</groupId>
+    	<artifactId>pagehelper</artifactId>
+    <version>3.6.3</version>
+</dependency>
+  </dependencies>
+</project>

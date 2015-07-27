@@ -1,0 +1,10 @@
+classpath
+*.settings
+*target
+*DS_Store
+*.idb
+out
+*.iml
+.idea
+*.gitignoresettings
+.project

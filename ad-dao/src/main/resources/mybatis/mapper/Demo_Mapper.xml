@@ -1,0 +1,21 @@
+﻿<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.netease.ad.dao.Demo">
+	<!-- 新增的方法写在这里 -->
+	<!--分页查询 结果map -->
+	<resultMap type="com.netease.ad.model.Demo" id="RM_demoVo">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+	</resultMap>
+	
+	
+	 <!-- 根据条件，分页查询列表 -->
+	<select id="queryDemosAll"  resultMap="RM_demoVo">
+		Select * From net_ad_demo	
+	</select>
+	
+    <!-- 删除所有记录,返回受影响的行数 -->
+	<delete id="deleteAll">
+		Delete From net_ad_demo
+	</delete>
+	
+</mapper>
